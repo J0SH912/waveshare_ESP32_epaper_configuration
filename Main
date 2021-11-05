@@ -1,0 +1,44 @@
+esphome:
+  name: esp-display
+  platform: ESP32
+  board: esp32dev
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+  password: "GENERATED_PASSWORD"
+
+wifi:
+  ssid: "Your_SSID"
+  password: "Your_Password"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esp-Display Fallback Hotspot"
+    password: "FALLBACK_PASSWORD"
+
+captive_portal:
+
+font:
+  - file: 'fonts/comic.ttf'
+    id: comic
+    size: 32
+
+spi:
+  clk_pin: 13
+  mosi_pin: 14
+
+display:
+  - platform: waveshare_epaper
+    cs_pin: 15
+    dc_pin: 27
+    busy_pin: 25
+    reset_pin: 26
+    model: 5.83in
+    update_interval: 30s
+    lambda: |-
+      it.print(0, 0, id(comic), "Hello World!");
