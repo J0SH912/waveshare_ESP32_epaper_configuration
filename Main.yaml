@@ -13,7 +13,7 @@ api:
 ota:
 
 dashboard_import:
-  package_import_url: github://J0SH912/waveshare_ESP32_epaper_configuration/blob/main/Main.yaml@V0
+  package_import_url: github://J0SH912/waveshare_ESP32_epaper_configuration/blob/main/Main.yaml@V0.0.0001
 
 wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
