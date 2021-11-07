@@ -9,13 +9,13 @@ logger:
 # Enable Home Assistant API
 api:
 
+# Enable OTA updates
 ota:
-  password: "GENERATED_PASSWORD"
+
+dashboard_import:
+  package_import_url: github://J0SH912/waveshare_ESP32_epaper_configuration/
 
 wifi:
-  ssid: "Your_SSID"
-  password: "Your_Password"
-
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Esp-Display Fallback Hotspot"
