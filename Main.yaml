@@ -33,7 +33,7 @@ display:
     dc_pin: 27
     busy_pin: 25
     reset_pin: 26
-    model: 1.54in
+    model: 1.54inv2
     update_interval: 10s
     lambda: |-
       it.fill(COLOR_ON);
