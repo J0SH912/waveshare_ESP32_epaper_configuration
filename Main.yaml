@@ -34,6 +34,6 @@ display:
     busy_pin: 25
     reset_pin: 26
     model: 5.83in
-    update_interval: 2s
+    update_interval: 10s
     lambda: |-
       it.fill(COLOR_ON);
