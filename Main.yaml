@@ -13,7 +13,7 @@ api:
 ota:
 
 dashboard_import:
-  package_import_url: github://J0SH912/waveshare_ESP32_epaper_configuration/blob/main/Main.yaml@V0.0.0002
+  package_import_url: github://J0SH912/waveshare_ESP32_epaper_configuration/blob/main/Main.yaml@V0.0.0003
 
 wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
@@ -36,4 +36,4 @@ display:
     model: 5.83in
     update_interval: 10s
     lambda: |-
-      it.fill(COLOR_ON);
+      it.fill(COLOR_OFF);
