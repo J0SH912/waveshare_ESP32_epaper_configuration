@@ -36,4 +36,4 @@ display:
     model: 1.54in
     update_interval: 10s
     lambda: |-
-      it.fill(COLOR_OFF);
+      it.fill(COLOR_ON);
